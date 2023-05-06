@@ -84,7 +84,7 @@ svg {
     justify-content: top;
     flex-direction: column;
     text-align: center;
-    max-width: 25%;
+    width: 25%;
     margin-bottom: 15px;
 }
 
@@ -148,4 +148,57 @@ svg {
 }
 
 
+@media only screen and (max-width: 425px){
+
+    #luxeol{
+        width: 100%;
+    }
+
+
+    #facts::-webkit-scrollbar{
+        display: none;
+    }
+
+    #facts .fact{
+        width: 33% !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #luxeol{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #specs{
+        margin: 0;
+    }
+
+    #facts{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: left; 
+    }
+
+    #facts::-webkit-scrollbar{
+        display: none;
+    }
+
+    #facts .fact{
+        flex-shrink: 0;
+        width: 30% !important;
+        padding: 0 2px;
+        height: 100%;
+    }
+
+    .fact p{
+        display: flex;
+        line-height: 21px;
+        font-size: 14px;
+    }
+}
 
